@@ -5,7 +5,6 @@ import com.clean.swing.app.AbstractSwingApplication;
 import com.clean.swing.app.AbstractSwingModule;
 import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
-import com.jhw.swing.util.icons.DerivableIcon;
 import com.jhw.swing.util.icons.icon_svg.IconSVG;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
