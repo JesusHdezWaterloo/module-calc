@@ -2,7 +2,7 @@ package com.jhw.modules.calc;
 
 import com.clean.core.app.services.ExceptionHandler;
 import com.clean.swing.app.AbstractSwingApplication;
-import com.clean.swing.app.AbstractSwingModule;
+import com.clean.swing.app.AbstractSwingMainModule;
 import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
 import com.jhw.swing.util.icons.icon_svg.IconSVG;
@@ -10,7 +10,7 @@ import java.awt.event.ActionEvent;
 import java.io.IOException;
 import javax.swing.AbstractAction;
 
-public class CalcSwingModule implements AbstractSwingModule {
+public class CalcSwingModule implements AbstractSwingMainModule {
 
     @Override
     public void register(AbstractSwingApplication app) {
