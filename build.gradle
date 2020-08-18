@@ -14,8 +14,8 @@ repositories {
 dependencies {
     testImplementation 'junit:junit:4.13'
         
-    implementation project(':utils')
     implementation project(':clean-core')
     implementation project(':clean-swing')
-    implementation project(':material-swing')
+    implementation project(':derivable-icons')
+
 }
