@@ -12,9 +12,16 @@ import javax.swing.AbstractAction;
 
 public class CalcSwingModule implements AbstractSwingMainModule {
 
+    private CalcSwingModule() {
+    }
+
+    public static CalcSwingModule init() {
+        System.out.println("Iniciando 'Calculadora'");
+        return new CalcSwingModule();
+    }
+
     @Override
     public void register(AbstractSwingApplication app) {
-        System.out.println("Creando 'Calculadora'");
         registerCalc(app);
     }
 
