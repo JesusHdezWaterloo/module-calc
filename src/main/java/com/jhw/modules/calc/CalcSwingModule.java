@@ -2,7 +2,7 @@ package com.jhw.modules.calc;
 
 import com.clean.core.app.services.ExceptionHandler;
 import com.clean.swing.app.AbstractSwingApplication;
-import com.clean.swing.app.AbstractSwingMainModule;
+import com.clean.swing.app.DefaultAbstractSwingMainModule;
 import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
 import com.jhw.swing.utils.icons.IconSVG;
@@ -10,11 +10,18 @@ import java.awt.event.ActionEvent;
 import java.io.IOException;
 import javax.swing.AbstractAction;
 
-public class CalcSwingModule implements AbstractSwingMainModule {
+public class CalcSwingModule extends DefaultAbstractSwingMainModule {
+
+    private CalcSwingModule() {
+    }
+
+    public static CalcSwingModule init() {
+        System.out.println("Iniciando 'Calculadora'");
+        return new CalcSwingModule();
+    }
 
     @Override
     public void register(AbstractSwingApplication app) {
-        System.out.println("Creando 'Calculadora'");
         registerCalc(app);
     }
 
@@ -32,16 +39,6 @@ public class CalcSwingModule implements AbstractSwingMainModule {
                 }
             }
         });
-    }
-
-    /**
-     * Dont need navigation
-     *
-     * @param string
-     * @param o
-     */
-    @Override
-    public void navigateTo(String string, Object... o) {
     }
 
 }
