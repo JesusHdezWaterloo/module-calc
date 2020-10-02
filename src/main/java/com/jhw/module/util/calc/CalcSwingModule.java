@@ -1,11 +1,11 @@
-package com.jhw.modules.calc;
+package com.jhw.module.util.calc;
 
 import com.clean.core.app.services.ExceptionHandler;
 import com.clean.swing.app.AbstractSwingApplication;
 import com.clean.swing.app.DefaultAbstractSwingMainModule;
 import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
-import com.jhw.swing.utils.icons.IconSVG;
+import com.jhw.swing.derivable_icons.IconSVG;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import javax.swing.AbstractAction;
