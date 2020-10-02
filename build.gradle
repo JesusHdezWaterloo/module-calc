@@ -4,7 +4,6 @@ plugins {
 
 group = 'com.jhw.modules.calc'
 
-//mainClassName = 'com.jhw.modules.calc.Main'
 
 repositories {
     jcenter()
@@ -14,8 +13,8 @@ repositories {
 dependencies {
     testImplementation 'junit:junit:4.13'
         
-    implementation project(':clean-core')
+    implementation project(':clean-core-full')
     implementation project(':clean-swing')
-    implementation project(':derivable-icons')
+    implementation project(':swing-derivable_icons')
 
 }
