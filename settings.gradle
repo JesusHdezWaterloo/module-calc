@@ -1,7 +1,10 @@
-rootProject.name = 'Calc'
+rootProject.name = 'module-util-calc'
 
-include ':clean-core',':clean-swing', ':derivable-icons'
+include ':clean-core-full'
+project(':clean-core-full').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core-full" as File
 
-project(':clean-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\CleanCoreFull" as File
-project(':clean-swing').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\CleanSwing" as File
-project(':derivable-icons').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Material\\Derivable Icons" as File
+include ':clean-swing'
+project(':clean-swing').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-swing" as File
+
+include ':swing-derivable_icons'
+project(':swing-derivable_icons').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\swing-derivable_icons" as File
