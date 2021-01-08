@@ -1,4 +1,4 @@
-package com.jhw.module.util.calc;
+package com.root101.module.util.calc;
 
 import com.root101.clean.core.app.services.ExceptionHandler;
 import com.root101.clean.swing.app.AbstractSwingApplication;
