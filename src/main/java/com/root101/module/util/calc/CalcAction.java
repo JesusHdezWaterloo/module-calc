@@ -33,7 +33,7 @@ public class CalcAction extends AbstractAction {
     }
 
     public CalcAction() {
-        super("Calculadore", CalcModuleNavigator.CALC);
+        super("Calculadora", CalcModuleNavigator.CALC);
     }
 
     @Override
